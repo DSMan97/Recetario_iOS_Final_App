@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0772A7A921ABE0AD00CAF9E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7A821ABE0AD00CAF9E3 /* AppDelegate.swift */; };
+		0772A7B021ABE0AE00CAF9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0772A7AF21ABE0AE00CAF9E3 /* Assets.xcassets */; };
+		0772A7BE21ABE0AE00CAF9E3 /* RecetarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7BD21ABE0AE00CAF9E3 /* RecetarioTests.swift */; };
+		0772A7C921ABE0AE00CAF9E3 /* RecetarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7C821ABE0AE00CAF9E3 /* RecetarioUITests.swift */; };
+		0772A7D921ABE6F200CAF9E3 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7D721ABE6F200CAF9E3 /* CategoriesVC.swift */; };
+		0772A7DA21ABE6F200CAF9E3 /* CategoriesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0772A7D821ABE6F200CAF9E3 /* CategoriesVC.xib */; };
+		0772A7DE21ABEC9100CAF9E3 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7DD21ABEC9100CAF9E3 /* Recipes.swift */; };
+		0772A7E121ABEDB200CAF9E3 /* RecipeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7DF21ABEDB200CAF9E3 /* RecipeCells.swift */; };
+		0772A7E221ABEDB200CAF9E3 /* RecipeCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0772A7E021ABEDB200CAF9E3 /* RecipeCells.xib */; };
+		0772A7E421AC046600CAF9E3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7E321AC046600CAF9E3 /* Categories.swift */; };
+		C468FA5609BBCF0C6E192DF8 /* Pods_Recetario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30DC2F9A59372DB3200764B /* Pods_Recetario.framework */; };
+		ECB44009F31D3431B6A15F5A /* Pods_RecetarioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782FADCCAF05CE2FBFFD6637 /* Pods_RecetarioUITests.framework */; };
+		F0E9BF5A24D40E32A9D3F446 /* Pods_RecetarioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D66397E0D6FFCF45C18981 /* Pods_RecetarioTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0772A7BA21ABE0AE00CAF9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772A79D21ABE0AD00CAF9E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0772A7A421ABE0AD00CAF9E3;
+			remoteInfo = Recetario;
+		};
+		0772A7C521ABE0AE00CAF9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0772A79D21ABE0AD00CAF9E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0772A7A421ABE0AD00CAF9E3;
+			remoteInfo = Recetario;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0772A7A521ABE0AD00CAF9E3 /* Recetario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0772A7A821ABE0AD00CAF9E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0772A7AF21ABE0AE00CAF9E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0772A7B421ABE0AE00CAF9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0772A7B921ABE0AE00CAF9E3 /* RecetarioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetarioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0772A7BD21ABE0AE00CAF9E3 /* RecetarioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioTests.swift; sourceTree = "<group>"; };
+		0772A7BF21ABE0AE00CAF9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0772A7C421ABE0AE00CAF9E3 /* RecetarioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetarioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0772A7C821ABE0AE00CAF9E3 /* RecetarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioUITests.swift; sourceTree = "<group>"; };
+		0772A7CA21ABE0AE00CAF9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0772A7D721ABE6F200CAF9E3 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		0772A7D821ABE6F200CAF9E3 /* CategoriesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesVC.xib; sourceTree = "<group>"; };
+		0772A7DD21ABEC9100CAF9E3 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		0772A7DF21ABEDB200CAF9E3 /* RecipeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCells.swift; sourceTree = "<group>"; };
+		0772A7E021ABEDB200CAF9E3 /* RecipeCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeCells.xib; sourceTree = "<group>"; };
+		0772A7E321AC046600CAF9E3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		3443E85CE7FA06934001DC1F /* Pods-RecetarioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetarioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecetarioTests/Pods-RecetarioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35BC2ABEA21C9C68F3149E27 /* Pods-RecetarioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetarioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecetarioTests/Pods-RecetarioTests.release.xcconfig"; sourceTree = "<group>"; };
+		4264D1BC36273DA826F52E2A /* Pods-RecetarioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetarioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecetarioUITests/Pods-RecetarioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		782FADCCAF05CE2FBFFD6637 /* Pods_RecetarioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecetarioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D338A73482D4DA25323419 /* Pods-Recetario.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recetario.release.xcconfig"; path = "Pods/Target Support Files/Pods-Recetario/Pods-Recetario.release.xcconfig"; sourceTree = "<group>"; };
+		A1129039EAF6C6BDB117409E /* Pods-RecetarioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetarioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecetarioUITests/Pods-RecetarioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A30DC2F9A59372DB3200764B /* Pods_Recetario.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recetario.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED65BF82259DD94CC126CEF /* Pods-Recetario.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recetario.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Recetario/Pods-Recetario.debug.xcconfig"; sourceTree = "<group>"; };
+		F3D66397E0D6FFCF45C18981 /* Pods_RecetarioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecetarioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0772A7A221ABE0AD00CAF9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C468FA5609BBCF0C6E192DF8 /* Pods_Recetario.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7B621ABE0AE00CAF9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E9BF5A24D40E32A9D3F446 /* Pods_RecetarioTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7C121ABE0AE00CAF9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB44009F31D3431B6A15F5A /* Pods_RecetarioUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0772A79C21ABE0AD00CAF9E3 = {
+			isa = PBXGroup;
+			children = (
+				0772A7A721ABE0AD00CAF9E3 /* Recetario */,
+				0772A7BC21ABE0AE00CAF9E3 /* RecetarioTests */,
+				0772A7C721ABE0AE00CAF9E3 /* RecetarioUITests */,
+				0772A7A621ABE0AD00CAF9E3 /* Products */,
+				518808F4A2CC3F033298D821 /* Pods */,
+				CB89B7D38CDA81B3F65C0217 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0772A7A621ABE0AD00CAF9E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7A521ABE0AD00CAF9E3 /* Recetario.app */,
+				0772A7B921ABE0AE00CAF9E3 /* RecetarioTests.xctest */,
+				0772A7C421ABE0AE00CAF9E3 /* RecetarioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0772A7A721ABE0AD00CAF9E3 /* Recetario */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7DC21ABEC0F00CAF9E3 /* Cell */,
+				0772A7DB21ABEC0800CAF9E3 /* Model */,
+				0772A7D621ABE65B00CAF9E3 /* ViewControllers */,
+				0772A7A821ABE0AD00CAF9E3 /* AppDelegate.swift */,
+				0772A7AF21ABE0AE00CAF9E3 /* Assets.xcassets */,
+				0772A7B421ABE0AE00CAF9E3 /* Info.plist */,
+			);
+			path = Recetario;
+			sourceTree = "<group>";
+		};
+		0772A7BC21ABE0AE00CAF9E3 /* RecetarioTests */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7BD21ABE0AE00CAF9E3 /* RecetarioTests.swift */,
+				0772A7BF21ABE0AE00CAF9E3 /* Info.plist */,
+			);
+			path = RecetarioTests;
+			sourceTree = "<group>";
+		};
+		0772A7C721ABE0AE00CAF9E3 /* RecetarioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7C821ABE0AE00CAF9E3 /* RecetarioUITests.swift */,
+				0772A7CA21ABE0AE00CAF9E3 /* Info.plist */,
+			);
+			path = RecetarioUITests;
+			sourceTree = "<group>";
+		};
+		0772A7D621ABE65B00CAF9E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7D721ABE6F200CAF9E3 /* CategoriesVC.swift */,
+				0772A7D821ABE6F200CAF9E3 /* CategoriesVC.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0772A7DB21ABEC0800CAF9E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7DD21ABEC9100CAF9E3 /* Recipes.swift */,
+				0772A7E321AC046600CAF9E3 /* Categories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0772A7DC21ABEC0F00CAF9E3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0772A7DF21ABEDB200CAF9E3 /* RecipeCells.swift */,
+				0772A7E021ABEDB200CAF9E3 /* RecipeCells.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		518808F4A2CC3F033298D821 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED65BF82259DD94CC126CEF /* Pods-Recetario.debug.xcconfig */,
+				91D338A73482D4DA25323419 /* Pods-Recetario.release.xcconfig */,
+				3443E85CE7FA06934001DC1F /* Pods-RecetarioTests.debug.xcconfig */,
+				35BC2ABEA21C9C68F3149E27 /* Pods-RecetarioTests.release.xcconfig */,
+				A1129039EAF6C6BDB117409E /* Pods-RecetarioUITests.debug.xcconfig */,
+				4264D1BC36273DA826F52E2A /* Pods-RecetarioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB89B7D38CDA81B3F65C0217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC2F9A59372DB3200764B /* Pods_Recetario.framework */,
+				F3D66397E0D6FFCF45C18981 /* Pods_RecetarioTests.framework */,
+				782FADCCAF05CE2FBFFD6637 /* Pods_RecetarioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0772A7A421ABE0AD00CAF9E3 /* Recetario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0772A7CD21ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "Recetario" */;
+			buildPhases = (
+				5CA95739973D0F69C145F67A /* [CP] Check Pods Manifest.lock */,
+				0772A7A121ABE0AD00CAF9E3 /* Sources */,
+				0772A7A221ABE0AD00CAF9E3 /* Frameworks */,
+				0772A7A321ABE0AD00CAF9E3 /* Resources */,
+				D6963FA1F66E75B276A1F7A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recetario;
+			productName = Recetario;
+			productReference = 0772A7A521ABE0AD00CAF9E3 /* Recetario.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0772A7B821ABE0AE00CAF9E3 /* RecetarioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0772A7D021ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "RecetarioTests" */;
+			buildPhases = (
+				3633417A9AC599DED929BA1D /* [CP] Check Pods Manifest.lock */,
+				0772A7B521ABE0AE00CAF9E3 /* Sources */,
+				0772A7B621ABE0AE00CAF9E3 /* Frameworks */,
+				0772A7B721ABE0AE00CAF9E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0772A7BB21ABE0AE00CAF9E3 /* PBXTargetDependency */,
+			);
+			name = RecetarioTests;
+			productName = RecetarioTests;
+			productReference = 0772A7B921ABE0AE00CAF9E3 /* RecetarioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0772A7C321ABE0AE00CAF9E3 /* RecetarioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0772A7D321ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "RecetarioUITests" */;
+			buildPhases = (
+				6C3162A2EFC295C954CE9822 /* [CP] Check Pods Manifest.lock */,
+				0772A7C021ABE0AE00CAF9E3 /* Sources */,
+				0772A7C121ABE0AE00CAF9E3 /* Frameworks */,
+				0772A7C221ABE0AE00CAF9E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0772A7C621ABE0AE00CAF9E3 /* PBXTargetDependency */,
+			);
+			name = RecetarioUITests;
+			productName = RecetarioUITests;
+			productReference = 0772A7C421ABE0AE00CAF9E3 /* RecetarioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0772A79D21ABE0AD00CAF9E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "GUILLERMO CRESPO AGUAYO";
+				TargetAttributes = {
+					0772A7A421ABE0AD00CAF9E3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					0772A7B821ABE0AE00CAF9E3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0772A7A421ABE0AD00CAF9E3;
+					};
+					0772A7C321ABE0AE00CAF9E3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0772A7A421ABE0AD00CAF9E3;
+					};
+				};
+			};
+			buildConfigurationList = 0772A7A021ABE0AD00CAF9E3 /* Build configuration list for PBXProject "Recetario" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0772A79C21ABE0AD00CAF9E3;
+			productRefGroup = 0772A7A621ABE0AD00CAF9E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0772A7A421ABE0AD00CAF9E3 /* Recetario */,
+				0772A7B821ABE0AE00CAF9E3 /* RecetarioTests */,
+				0772A7C321ABE0AE00CAF9E3 /* RecetarioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0772A7A321ABE0AD00CAF9E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0772A7DA21ABE6F200CAF9E3 /* CategoriesVC.xib in Resources */,
+				0772A7B021ABE0AE00CAF9E3 /* Assets.xcassets in Resources */,
+				0772A7E221ABEDB200CAF9E3 /* RecipeCells.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7B721ABE0AE00CAF9E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7C221ABE0AE00CAF9E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3633417A9AC599DED929BA1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecetarioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA95739973D0F69C145F67A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recetario-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3162A2EFC295C954CE9822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecetarioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6963FA1F66E75B276A1F7A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Recetario/Pods-Recetario-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Recetario/Pods-Recetario-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0772A7A121ABE0AD00CAF9E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0772A7D921ABE6F200CAF9E3 /* CategoriesVC.swift in Sources */,
+				0772A7DE21ABEC9100CAF9E3 /* Recipes.swift in Sources */,
+				0772A7E421AC046600CAF9E3 /* Categories.swift in Sources */,
+				0772A7A921ABE0AD00CAF9E3 /* AppDelegate.swift in Sources */,
+				0772A7E121ABEDB200CAF9E3 /* RecipeCells.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7B521ABE0AE00CAF9E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0772A7BE21ABE0AE00CAF9E3 /* RecetarioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0772A7C021ABE0AE00CAF9E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0772A7C921ABE0AE00CAF9E3 /* RecetarioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0772A7BB21ABE0AE00CAF9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0772A7A421ABE0AD00CAF9E3 /* Recetario */;
+			targetProxy = 0772A7BA21ABE0AE00CAF9E3 /* PBXContainerItemProxy */;
+		};
+		0772A7C621ABE0AE00CAF9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0772A7A421ABE0AD00CAF9E3 /* Recetario */;
+			targetProxy = 0772A7C521ABE0AE00CAF9E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0772A7CB21ABE0AE00CAF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0772A7CC21ABE0AE00CAF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0772A7CE21ABE0AE00CAF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED65BF82259DD94CC126CEF /* Pods-Recetario.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = Recetario/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.Recetario";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0772A7CF21ABE0AE00CAF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D338A73482D4DA25323419 /* Pods-Recetario.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = Recetario/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.Recetario";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0772A7D121ABE0AE00CAF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3443E85CE7FA06934001DC1F /* Pods-RecetarioTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = RecetarioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.RecetarioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recetario.app/Recetario";
+			};
+			name = Debug;
+		};
+		0772A7D221ABE0AE00CAF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BC2ABEA21C9C68F3149E27 /* Pods-RecetarioTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = RecetarioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.RecetarioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recetario.app/Recetario";
+			};
+			name = Release;
+		};
+		0772A7D421ABE0AE00CAF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1129039EAF6C6BDB117409E /* Pods-RecetarioUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = RecetarioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.RecetarioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recetario;
+			};
+			name = Debug;
+		};
+		0772A7D521ABE0AE00CAF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4264D1BC36273DA826F52E2A /* Pods-RecetarioUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XS5QQ242T5;
+				INFOPLIST_FILE = RecetarioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.u-tad.RecetarioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recetario;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0772A7A021ABE0AD00CAF9E3 /* Build configuration list for PBXProject "Recetario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0772A7CB21ABE0AE00CAF9E3 /* Debug */,
+				0772A7CC21ABE0AE00CAF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0772A7CD21ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "Recetario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0772A7CE21ABE0AE00CAF9E3 /* Debug */,
+				0772A7CF21ABE0AE00CAF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0772A7D021ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "RecetarioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0772A7D121ABE0AE00CAF9E3 /* Debug */,
+				0772A7D221ABE0AE00CAF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0772A7D321ABE0AE00CAF9E3 /* Build configuration list for PBXNativeTarget "RecetarioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0772A7D421ABE0AE00CAF9E3 /* Debug */,
+				0772A7D521ABE0AE00CAF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0772A79D21ABE0AD00CAF9E3 /* Project object */;
+}
