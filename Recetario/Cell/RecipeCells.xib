@@ -11,12 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipeCells" customModule="Recetario" customModuleProvider="target">
             <connections>
+                <outlet property="catImg" destination="jRE-6j-i92" id="8vT-F1-6bW"/>
                 <outlet property="imageView" destination="jRE-6j-i92" id="0k4-Q7-BkH"/>
                 <outlet property="titleLabel" destination="xWP-fO-6eq" id="0iB-jo-tnT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="jVQ-4n-I8V" customClass="RecipeCells" customModule="Recetario" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCells" rowHeight="65" id="jVQ-4n-I8V" customClass="RecipeCells" customModule="Recetario" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="385" height="65"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jVQ-4n-I8V" id="YTk-wo-b9y">
@@ -45,7 +46,7 @@
                     <constraint firstItem="xWP-fO-6eq" firstAttribute="centerY" secondItem="jRE-6j-i92" secondAttribute="centerY" id="z8j-QZ-6Lv"/>
                 </constraints>
             </tableViewCellContentView>
-            <accessibility key="accessibilityConfiguration" identifier="TitleCell"/>
+            <accessibility key="accessibilityConfiguration" identifier="RecipeCells"/>
             <point key="canvasLocation" x="20.5" y="62.5"/>
         </tableViewCell>
     </objects>

@@ -40,7 +40,7 @@ class CategoriesVC: UIViewController {
     }
     
     private func registerCell(){
-        let identifier = "TitleCell"
+        let identifier = "RecipeCells"
         let cellNib = UINib(nibName: identifier, bundle: nil)
         tableViewAbout.register(cellNib, forCellReuseIdentifier: identifier)
     }
@@ -62,14 +62,11 @@ class CategoriesVC: UIViewController {
 }
 
 extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return arrcategories.count
+       return arrcategories.count
     }
     
     func tableView(_ tableView:UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -89,10 +86,10 @@ extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func createsection(_ indexPath: IndexPath) -> RecipeCells{
-        let cell: RecipeCells = tableViewAbout.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as! RecipeCells
+        let cell: RecipeCells = tableViewAbout.dequeueReusableCell(withIdentifier: "RecipeCells", for: indexPath) as! RecipeCells
         let myRecipe = arrcategories[indexPath.row]
             cell.titleLabel.text = myRecipe.categoryName
-            cell.imageView?.sd_setImage(with: URL(string: myRecipe.categoryImage), placeholderImage: nil, completed: nil)
+            cell.catImg.sd_setImage(with: URL(string: myRecipe.categoryImage), placeholderImage: nil, completed: nil)
         return cell
     }
    
