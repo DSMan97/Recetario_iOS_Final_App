@@ -27,7 +27,7 @@ class CategoriesVC: UIViewController {
 
     private func generateData(){
         let catMeat = Categories(name: "Meat", image: "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/03/16/15212064146858.jpg")
-         let catFish = Categories(name: "Fish", image: "http://www.dagustin.com/wp-content/uploads/2015/09/b2ap3_thumbnail_salmon.jpg")
+         let catFish = Categories(name: "Fish", image: "https://www.partesdel.com/wp-content/uploads/parte-del-pescado.png")
           let catChiken = Categories(name: "Chicken", image: "https://s20421.pcdn.co/wp-content/uploads/2017/11/pollo-amarillo-295-1.jpg")
          let catVegetables = Categories(name: "Vegetables", image: "https://www.vegetables.co.nz/assets/Uploads/vegetables.jpg")
          let catSalad = Categories(name: "Salad", image: "https://assets.bonappetit.com/photos/5ad51b07ff795274c43a0f58/16:9/w_1200,c_limit/20180403_Basically_122.jpg")
