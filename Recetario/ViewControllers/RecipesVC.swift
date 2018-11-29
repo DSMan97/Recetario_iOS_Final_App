@@ -13,6 +13,7 @@ class RecipesVC: UIViewController {
     @IBOutlet weak var tableViewAbout: UITableView!
     internal var recipes: Recipes!
     var arrecipes:[Recipes]=[]
+    var arrecipesFilter:[Recipes]=[]
     
     convenience init(_ marrecipes:[Recipes]){
         self.init()
@@ -27,13 +28,37 @@ class RecipesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title="Recipes"
+        refreshControl.addTarget(self, action: #selector(refreshControlPulled), for: .valueChanged)
+        tableViewAbout.addSubview(refreshControl)
+        
+        searchController.searchBar.backgroundColor = UIColor.white
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search..."
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        navigationItem.hidesSearchBarWhenScrolling = false
         generateData()
         registerCell()
    
         // Do any additional setup after loading the view.
     }
     
-    
+    internal func searchBarIsEmpty() -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    internal func isFiltering() -> Bool{
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    internal func searchFilter(searchText: String){
+        arrecipesFilter = arrecipes.filter({ (aPost: Post) -> Bool in
+            if let position = Int(searchText){
+                return (position == aPost.id)
+            }
+            return aPost.title.lowercased().contains((searchText.lowercased()))
+        })
+        tableViewAbout.reloadData()
+    }
     private func generateData(){
         
         
@@ -102,7 +127,11 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
  
 
 
-    
+    extension Recipes: UISearchResultsUpdating{
+        func updateSearchResults(for searchController: UISearchController){
+            searchFilter(searchText: searchController.searchBar.text!)
+        }
+    }
 
 
 
