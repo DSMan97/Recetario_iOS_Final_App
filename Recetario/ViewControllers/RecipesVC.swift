@@ -76,7 +76,7 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let destination = RecipesDetailVC()
+        let destination = RecipesDetailVC(arrecipes[indexPath.row])
         navigationController?.pushViewController(destination, animated: true)
         
     }

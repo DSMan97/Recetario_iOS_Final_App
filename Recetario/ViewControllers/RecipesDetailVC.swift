@@ -11,8 +11,16 @@ import UIKit
 class RecipesDetailVC: UIViewController {
     @IBOutlet weak var recipeContent:UITextView!
     @IBOutlet weak var recipeImag: UIImageView!
+    var recipes:Recipes!
     
+    convenience init(_ recipes: Recipes){
+        self.init()
+        self.recipes = recipes
+    }
     override func viewDidLoad() {
+        self.title = recipes.recipeName
+        recipeImag.sd_setImage(with: URL(string: recipes.recipeImg), placeholderImage: nil, completed: nil)
+        recipeContent.text = recipes.recipeContent
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
