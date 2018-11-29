@@ -28,8 +28,7 @@ class RecipesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title="Recipes"
-        refreshControl.addTarget(self, action: #selector(refreshControlPulled), for: .valueChanged)
-        tableViewAbout.addSubview(refreshControl)
+     
         
         searchController.searchBar.backgroundColor = UIColor.white
         searchController.searchResultsUpdater = self
@@ -51,11 +50,11 @@ class RecipesVC: UIViewController {
         return searchController.isActive && !searchBarIsEmpty()
     }
     internal func searchFilter(searchText: String){
-        arrecipesFilter = arrecipes.filter({ (aPost: Post) -> Bool in
-            if let position = Int(searchText){
-                return (position == aPost.id)
-            }
-            return aPost.title.lowercased().contains((searchText.lowercased()))
+        arrecipesFilter = arrecipes.filter({ (recipes: Recipes) -> Bool in
+//            if let position = Int(searchText){
+//                return (position == recipes.recipeName)
+//            }
+            return recipes.recipeName.lowercased().contains((searchText.lowercased()))
         })
         tableViewAbout.reloadData()
     }
@@ -124,15 +123,12 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
     }
   
     
- 
 
 
-    extension Recipes: UISearchResultsUpdating{
-        func updateSearchResults(for searchController: UISearchController){
-            searchFilter(searchText: searchController.searchBar.text!)
-        }
+}
+
+extension RecipesVC:UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController){
+        searchFilter(searchText: searchController.searchBar.text!)
     }
-
-
-
 }
