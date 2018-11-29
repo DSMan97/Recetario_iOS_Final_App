@@ -12,12 +12,14 @@ import Foundation
 class Recipes{
     var recipeName:String!
     var recipeContent:String!
+    var recipeImg:String!
     
 
     
-    init(name:String,recipe:String) {
+    init(name:String,recipe:String, img:String) {
        self.recipeName = name
         self.recipeContent = recipe
+        self.recipeImg = img
     }
     
     

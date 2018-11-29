@@ -9,10 +9,11 @@
 
 import UIKit
 
-class RecipeCells: UITableViewCell{
+class CategoriesCells: UITableViewCell{
     
     @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet var catImg:UIImageView!
+    @IBOutlet var desc:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
