@@ -27,6 +27,7 @@ class CategoriesVC: UIViewController {
 
     private func generateData(){
         let catMeat = Categories(name: "Meat", image: "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/03/16/15212064146858.jpg", desc: "The best recipes for meat", mrecipes: [Recipes(name: "Solomillo relleno de manzana", recipe: "Primero que todo pedir al carnicero que nos abra el solomillo como un libro." +
+            "Poner la manzana troceada con las ciruelas en una sartén con mantequilla y un poco de azúcar moreno. Darle unas vueltas hasta que se ablanden un poco las manzanas" + "Rellenar el solomillo de cerdo con las manzanas y ciruelas", img: "https://t1.rg.ltmcdn.com/es/images/4/9/6/solomillo_relleno_de_manzana_65694_600.jpg"),Recipes(name: "Prueba", recipe: "Primero que todo pedir al carnicero que nos abra el solomillo como un libro." +
             "Poner la manzana troceada con las ciruelas en una sartén con mantequilla y un poco de azúcar moreno. Darle unas vueltas hasta que se ablanden un poco las manzanas" + "Rellenar el solomillo de cerdo con las manzanas y ciruelas", img: "https://t1.rg.ltmcdn.com/es/images/4/9/6/solomillo_relleno_de_manzana_65694_600.jpg")])
         let catFish = Categories(name: "Fish", image: "https://www.partesdel.com/wp-content/uploads/parte-del-pescado.png",desc: "The haters of fish", mrecipes:[Recipes(name: "Crema de calabaza con bacalao", recipe: "Limpia el interior de la calabaza, descarta las semillas y retira los filamentos. Córtala en trozos de tamaño medio." +
             

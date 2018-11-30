@@ -39,6 +39,7 @@ class RecipesVC: UIViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
         generateData()
         registerCell()
+      
    
         // Do any additional setup after loading the view.
     }
@@ -46,15 +47,15 @@ class RecipesVC: UIViewController {
     internal func searchBarIsEmpty() -> Bool{
         return searchController.searchBar.text?.isEmpty ?? true
     }
+    
     internal func isFiltering() -> Bool{
         return searchController.isActive && !searchBarIsEmpty()
     }
-    internal func searchFilter(searchText: String){
-        arrecipesFilter = arrecipes.filter({ (recipes: Recipes) -> Bool in
-//            if let position = Int(searchText){
-//                return (position == recipes.recipeName)
-//            }
-            return recipes.recipeName.lowercased().contains((searchText.lowercased()))
+    
+    internal func searchFilter(_ searchText: String){
+        arrecipesFilter =  arrecipes.filter({ (nRecipe: Recipes ) -> Bool in
+            
+            return (nRecipe.recipeName.lowercased().contains(searchText.lowercased()))
         })
         tableViewAbout.reloadData()
     }
@@ -81,18 +82,29 @@ class RecipesVC: UIViewController {
 }
 
 extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
+   
+    
     func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         var cell = UITableViewCell()
         cell = createsection(indexPath)
-        
         return cell
-    }
+        }
+    
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var cell = UITableViewCell()
+        if isFiltering(){
+            
+            
+            return arrecipesFilter.count
+            
+        }else{
+            
+            return arrecipes.count
+        }
         
-        return arrecipes.count
     }
     
     func tableView(_ tableView:UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -113,12 +125,19 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
     
     func createsection(_ indexPath: IndexPath) -> RecipesCells{
         let cell: RecipesCells = tableViewAbout.dequeueReusableCell(withIdentifier: "RecipesCells", for: indexPath) as! RecipesCells
-        let myRecipe = arrecipes[indexPath.row]
-        
-        cell.titleLabel.text = myRecipe.recipeName
-        cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
-        
-        
+        if isFiltering(){
+            let myRecipe = arrecipesFilter[indexPath.row]
+            cell.titleLabel.text = myRecipe.recipeName
+            cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
+            
+            //cell.accessoryType = .disclosureIndicator
+        }else{
+            let myRecipe = arrecipes[indexPath.row]
+            cell.titleLabel.text = myRecipe.recipeName
+            cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
+            //cell.accessoryType = .disclosureIndicator
+            
+        }
         return cell
     }
   
@@ -129,6 +148,6 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
 
 extension RecipesVC:UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController){
-        searchFilter(searchText: searchController.searchBar.text!)
+        searchFilter(searchController.searchBar.text!)
     }
 }

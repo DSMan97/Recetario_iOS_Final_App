@@ -13,6 +13,7 @@ class Recipes{
     var recipeName:String!
     var recipeContent:String!
     var recipeImg:String!
+   
     
 
     
