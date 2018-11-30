@@ -101,15 +101,14 @@ class CategoriesVC: UIViewController {
                         description: "Pocas verduras y hortalizas en el plato de hoy: 39,3%.Las obleas las incluimos dentro de los cereales, como alimentos energéticos, sobrepasando las recomendaciones nutricionales para que el plato sea equilibrado: 36,3%.Las gambas están en el porcentaje recomendado: 24,5%.",
                         duration: "20min")] )
         let catChiken = Categories(name: "Chicken", image: "https://s20421.pcdn.co/wp-content/uploads/2017/11/pollo-amarillo-295-1.jpg", desc: "The best KFC Recipes", mrecipes: [Recipes(
-            name: "Receta de Solomillo relleno de manzana",
-            recipe: "Primero que todo pedir al carnicero que nos abra el solomillo como un libro." +
-            "Poner la manzana troceada con las ciruelas en una sartén con mantequilla y un poco de azúcar moreno. Darle unas vueltas hasta que se ablanden un poco las manzanas" + "Rellenar el solomillo de cerdo con las manzanas y ciruelas",
-            img: "https://t1.rg.ltmcdn.com/es/images/4/9/6/solomillo_relleno_de_manzana_65694_600.jpg",
-            ingredients: "",
-            locationLat: 0.0, locationLong:  -3.7035825,
+            name: "Pollo al Curry con Nata",
+            recipe: "1.- ponemos a calentar en una sartén, un chorrito de aceite a fuego medio. Cuando esté caliente, añadimos la cebolla y el ajo picado. Salpimentamos y dejamos cocinar, mientras lo removemos de vez en cuando, unos 5 minutos\n2.- Pasado el tiempo, añadimos el tomate y el curry. Puedes añadir también una guindilla de cayena o chile (si quieres que pique). Removemos y dejamos cocinar un par de minutos más\n3.- Es el turno de añadir el pollo. Subimos un poco la fuerza del fuego y lo añadimos cortado en trozos del tamaño de un bocado. Salpimentamos y sellamos brevemente el pollo, mientras lo mezclamos con el resto de ingredientes\n4.- cuando el pollo esté sellado por fuera, añadimos la nata y removemos bien. Veremos que la nata se va tornando amarilla. Dejamos reducir 5 minutos más, a fuego suave y ¡listo para servir! Puedes espolvorear con un poco de perejil picado, para darle color\n",
+            img: "https://www.divinacocina.es/wp-content/uploads/pollo-al-curry-cazuela-arroz.jpg",
+            ingredients: "4 pechugas de pollo\n2 cebollas medianas\n4 dientes de ajo\n5 cucharadas de tomate frito (salsa de tomate)\n2 cucharadas de curry\n",
+            locationLat: 22.3511148, locationLong:  78.6677428,
             difficult: "Easy",
-            description: "",
-            duration: "1H:20min")])
+            description: "El pollo al curry es una receta típica del sudeste asiático. Consiste en este ave hecha con las especias del curry (Cúrcuma, pimienta, cilantro, macis, jengibre, cardamomo, clavo, canela, cayena y anís) y con nata. El curry, puedes hacerlo tú o puedes comprarlo ya hecho. Como guarnición, le viene “al pelo” un buen arroz blanco. Como resultado, tendremos una completísima comida con mucha personalidad. Tanto por su color como sabor. Además, en hacer esta receta no se tarda más de 15 minutos. Los ingredientes para hacer el pollo al curry son",
+            duration: "20min")])
         let catVegetables = Categories(name: "Vegetables", image: "https://www.vegetables.co.nz/assets/Uploads/vegetables.jpg", desc: "The best recipes for vegetables", mrecipes: [Recipes(
             name: "Receta de Solomillo relleno de manzana",
             recipe: "Primero que todo pedir al carnicero que nos abra el solomillo como un libro." +
