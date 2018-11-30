@@ -116,19 +116,21 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
             cell.titleLabel.text = myRecipe.recipeName
             cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
             cell.recipedificultly.text = myRecipe.recipeDifficult
-           
+            let destination = RecipesDetailVC(arrecipesFilter[indexPath.row])
+            navigationController?.pushViewController(destination, animated: true)
+            tableViewAbout.reloadData()
          
         }else{
             let myRecipe = arrecipes[indexPath.row]
             cell.titleLabel.text = myRecipe.recipeName
             cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
             cell.recipedificultly.text = myRecipe.recipeDifficult
-            
+            let destination = RecipesDetailVC(arrecipes[indexPath.row])
+            navigationController?.pushViewController(destination, animated: true)
+            tableViewAbout.reloadData()
            
         }
-        let destination = RecipesDetailVC(arrecipes[indexPath.row])
-        navigationController?.pushViewController(destination, animated: true)
-        tableViewAbout.reloadData()
+        
     }
     
     

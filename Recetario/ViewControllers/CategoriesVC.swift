@@ -129,7 +129,7 @@ class CategoriesVC: UIViewController {
                     description: "El pollo al horno con patatas y cebolla, es una receta que no conlleva mucho esfuerzo hacer. Y es por tanto fácil y rápida. Además, el resultado final será excelente, ya que la guarnición de patatas y cebolla, mezclada con los jugos y sabores que suelta el pollo, queda brutal. El vitoriano Gorka Barredo nos muestra cómo prepara en casa su famoso pollo asado al horno, acompañado con una deliciosa guarnición y éstos, son los ingredientes para su elaboración.",
                     duration: "20min"),Recipes(
                         
-                        name: "Pollo al Curry con Nata",
+                        name: "Pollo rebozado con maiz",
                         recipe: "1.- Se cortan los filetes de pechuga en tiras y se salpimientan. Se reservan.\n2.- Mientras maceran un poco los filetes con la sal y la pimienta, se baten los huevos en un bol y se les añade el ajo y perejil picados. Se mezcla bien.\n3.- Se tritura el maíz con la batidora eléctrica. No hace falta que se quede como harina, ya que es interesante encontrarse con trozos más grandes que otros.\n4.- En otro bol, se mezcla el pan rallado junto con el maíz frito triturado.\n5.-Se pasan los filetes de pollo por los huevos batidos, y luego, por la mezcla de pan rallado con maíz frito triturado.\n6.-Se fríen los filetes de pollo rebozados en una sartén con abundante aceite caliente hasta que se doren.Cuando estén hechos, se retiran del aceite y se ponen sobre papel de cocina para que absorban el exceso de aceite.\n",
                         img: "https://i.ytimg.com/vi/xLR9yqIyGRE/maxresdefault.jpg",
                         ingredients: "1 kg de filetes de pechuga de pollo\n200 g de maiz frito triturado\n100 de pan rallado\n1 diente de ajo\n1 cucharadita de perejil picado seco\n1 pizca de pimienta\nsal a gusto\n3 Huevos\n",
@@ -181,9 +181,37 @@ class CategoriesVC: UIViewController {
             ingredients: "Garbanzos...300g\nMorcilla...400g\nTocino...200g\nChorizo fresco...3 units\nFideos...150g\nPollo...150g\nPatatas...3 units",
             locationLat: 40.4167047,
             locationLong: -3.7035825,
-            difficult: "Easy",
+            difficult: "Hard",
             description: "La receta de cocido madrileño es una de las recetas que más me gusta cocinar, porque siempre gusta mucho cuando lo hago en casa y por lo tradicional de este plato\n. Podemos hacer el cocido madrileño a fuego lento en una cazuela o marmita grande, en cuyo caso emplearemos unas dos horas y media a fuego lento o utilizar la olla exprés con lo que tendremos el cocido madrileño listo en unos 20 minutos aproximadamente\n.Como en casi todas las recetas tradicionales, en cada casa hay una forma de elaborar el cocido madrileño. Los puristas le pondrán gallina en lugar de pollo este ultimo más jugoso y tierno, pero con menos sabor-, unos usarán tocino, otros panceta o papada y habrá quienes usen la pelota o bola de relleno elaborada con huevo y carne picada, que yo por ejemplo no suelo incluir\n. Con todo esto quiero que probéis mi receta, -ya veréis qué rico queda el cocido así preparado- y por supuesto, en caso de duda, adaptad la receta a vuestros gustos.",duration: "1H:20min"
-            )])
+                ),Recipes(
+                    name: "Sopa Castellana",
+                    recipe: "1.-Pelamos y fileteamos los ajos, no es necesario que sean muy finos. El ajo debe dar olor y también proporcionar la emulsión entre el agua y el aceite para que la sopa sea excelente. Reservamos en un cuenco.\n2.-Elegimos una cazuela grande, calentamos el aceite en el fondo e introducimos el ajo. Salteamos hasta que comiencen a coger un color dorado (pero cuidado que no se arrebaten).\n3.-Añadimos también el jamón cortado en trozos pequeños. Removemos con una cuchara de madera de manera envolvente hasta juntar bien los sabores.\n4.- Cuando los ajos tengan un color miel tostado añadimos 6 rebanadas de pan duro y les damos unas vueltas. Retiramos la cazuela del fuego y espolvoreamos con el pimentón dulce.\n5.-A mí me gusta así aunque mucha gente lo hace con pimentón picante.\n6.-El pimentón cumple una doble función: colorea de rojo el pan y además proporciona aroma. Para ello con la cazuela fuera del fuego para evitar que el pimentón se queme. Y que todo quede con un desagradable sabor amargo que nos fastidiaría la sopa.",
+                    img: "https://www.recetasderechupete.com/wp-content/uploads/2016/11/sopas_ajo_castellana-525x360.jpg",
+                    ingredients: "10 dientes de ajo\n6 huevos\n12 rebanadas de pan duro\n150 g de jamón serrano",
+                    locationLat: 40.4167047,
+                    locationLong: -3.7035825,
+                    difficult: "Easy",
+                    description: "Imprescindibles en Semana Santa y desayuno frecuente en muchas zonas del campo español. Nuestras abuelas y nuestras madres ya nos preparaban este plato tan natural, tradicional y reconfortante. Les bastaba con ajos, pan, pimentón, agua y un poco de jamón para que nos quedásemos embobados contemplando el fuego. Siempre mirando la cazuela para ver si ya estaban listas para cenar.",
+                     duration: "15min"
+            ),Recipes(
+                name: "Sopa de Arroz",
+                recipe: "1.-Pon el agua a hervir el agua, con el diente de ajo y la pastilla de Avecrem. En el primer hervor se echa el arroz y se deja cocer a fuego lento 10 minutos.\n2.-Ya está preparada esta sabrosa sopa, que se come calentita. ¡A saborearla!",
+                img: "https://www.gallinablanca.es/files/thumbs/81cd7736a6d188e1398c3ee4bd83a9d002c2e9ae_r900_480_2.jpg",
+                ingredients: "Caldo de Pollo\n 1 taza de arroz\n 1 diente de ajo",
+                locationLat: 40.4167047,
+                locationLong: -3.7035825,
+                difficult: "Easy",
+                description: "Cocinar una sopa nunca había sido tan sencillo. Solo necesita cuatro ingredientes: arroz, agua, ajo y Avecrem. Nada más. Así que si no eres un cocinitas no te preocupes porque esta receta es para todo el mundo y para todos los niveles. Es muy fácil, y además podrás disfrutar de un plato lleno de sabor.Lo mejor es que se prepara en tres pasos. Primero, hervir el agua con el Avecrem y el diente de ajo. Y segundo, echar el arroz y dejar que se cueza en su punto. Una vez cocido, ya podrás servir esta deliciosa sopa. ¿Fácil, no? Ya no tienes excusa para preparar platos sencillos, sanos y con gusto. ",duration: "40min"
+            ),Recipes(
+                name: "Sopa de Sémola",
+                recipe: "1.-Lavar y trocear en dados pequeños la zanahoria, al apio, y la cebolla.\n2.-Cortar también en finos trozos la espinaca y la lechuga.\n3.-Sofreír estos ingredientes con aceite de oliva, o en su defecto mantequilla, ajo y la cebolla.\n4.-Agregar a una cazuela grande el caldo de pollo y las verduras sofritas.\n5.-Añadir la sémola, poco a poco, mientras hierve el agua, Esta es la que hará que quede con la textura correcta.\n6.-Dejar cocer a fuego medio durante 15 minutos. Si pasado el tiempo, los vegetales siguen estando duros, dejar por unos minutos más. De esta forma los vegetales soltaran sus nutrientes y enriquecerán el sabor y la textura de plato.\n7.-Agregar sal y pimienta, un poco de orégano y parmesano.\n8.-Hervir unos momentos para unificar sabores y que se derrita el queso.\n",
+                img: "https://okdiario.com/img/2018/05/11/sopa-de-semola-655x368.jpg",
+                ingredients: "Ocho cucharadas de sémola\nSiete tazas de caldo de pollo\nDos cucharadas de aceite de oliva\nUna cebolla grande\nSal",
+                locationLat: 40.4167047,
+                locationLong: -3.7035825,
+                difficult: "Easy",
+                description: "La sopa de sémola es un plato elegante y sencillo que aporta los nutrientes necesarios para complementar una dieta balanceada.  Además, contiene una textura especial, gracias a la harina de sémola, el ingrediente que la que da el toque especial. A pesar de su alto contenido proteico, la sopa de sémola es normalmente utilizada como plato de entrada; este plato posee muchas cualidades necesarias y beneficiosas para el organismo, haciéndolo ideal para incorporarlo a una alimentación saludable.",duration: "20min"
+        )])
         let catDessert = Categories(name: "Dessert", image: "https://sevilla.abc.es/gurme//wp-content/uploads/2015/07/mousse-de-queso-con-cerezas.jpg", desc: "The best desserts", mrecipes: [Recipes(
             name: "Receta de Solomillo relleno de manzana",
             recipe: "Primero que todo pedir al carnicero que nos abra el solomillo como un libro." +
