@@ -16,16 +16,18 @@ class Recipes{
     var recipeIngredients:String!
     var recipeOriginLat:Double!
     var recipeOriginLong:Double!
+    var recipeDifficult:String!
     
 
     
-    init(name:String,recipe:String, img:String, ingredients:String, locationLat:Double, locationLong:Double) {
+    init(name:String,recipe:String, img:String, ingredients:String, locationLat:Double, locationLong:Double, difficult:String) {
        self.recipeName = name
         self.recipeContent = recipe
         self.recipeImg = img
         self.recipeIngredients = ingredients
         self.recipeOriginLat = locationLat
         self.recipeOriginLong = locationLong
+        self.recipeDifficult = difficult
     }
     
     

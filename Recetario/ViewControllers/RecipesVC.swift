@@ -87,6 +87,7 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         var cell = UITableViewCell()
         cell = createsection(indexPath)
+        
         return cell
         }
     
@@ -112,9 +113,25 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell: RecipesCells = tableViewAbout.dequeueReusableCell(withIdentifier: "RecipesCells", for: indexPath) as! RecipesCells
+        if isFiltering(){
+            let myRecipe = arrecipesFilter[indexPath.row]
+            cell.titleLabel.text = myRecipe.recipeName
+            cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
+            cell.recipedificultly.text = myRecipe.recipeDifficult
+           
+         
+        }else{
+            let myRecipe = arrecipes[indexPath.row]
+            cell.titleLabel.text = myRecipe.recipeName
+            cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
+            cell.recipedificultly.text = myRecipe.recipeDifficult
+            
+           
+        }
         let destination = RecipesDetailVC(arrecipes[indexPath.row])
         navigationController?.pushViewController(destination, animated: true)
-        
+        tableViewAbout.reloadData()
     }
     
     
@@ -129,14 +146,15 @@ extension RecipesVC: UITableViewDelegate, UITableViewDataSource {
             let myRecipe = arrecipesFilter[indexPath.row]
             cell.titleLabel.text = myRecipe.recipeName
             cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
-            
-            //cell.accessoryType = .disclosureIndicator
+            cell.recipedificultly.text = myRecipe.recipeDifficult
+       
+           
         }else{
             let myRecipe = arrecipes[indexPath.row]
             cell.titleLabel.text = myRecipe.recipeName
             cell.recipeImg.sd_setImage(with: URL(string: myRecipe.recipeImg), placeholderImage: nil, completed: nil)
-            //cell.accessoryType = .disclosureIndicator
-            
+            cell.recipedificultly.text = myRecipe.recipeDifficult
+          
         }
         return cell
     }

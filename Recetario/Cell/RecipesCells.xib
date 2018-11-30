@@ -23,9 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="56" height="65"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWP-fO-6eq">
-                        <rect key="frame" x="76" y="22" width="289" height="21"/>
+                        <rect key="frame" x="76" y="22" width="233" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="289" id="wdh-Mk-nzi"/>
+                            <constraint firstAttribute="width" constant="233" id="wdh-Mk-nzi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hN-k4-6uS">
+                        <rect key="frame" x="317" y="21" width="48" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="vWf-qt-waX"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -35,7 +44,9 @@
                 <constraints>
                     <constraint firstItem="jRE-6j-i92" firstAttribute="centerY" secondItem="YTk-wo-b9y" secondAttribute="centerY" id="31p-ox-0rS"/>
                     <constraint firstItem="xWP-fO-6eq" firstAttribute="leading" secondItem="jRE-6j-i92" secondAttribute="trailing" constant="20" id="5vU-96-bHI"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="xWP-fO-6eq" secondAttribute="trailing" constant="4" id="CZz-9f-2Xy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xWP-fO-6eq" secondAttribute="trailing" constant="60" id="CZz-9f-2Xy"/>
+                    <constraint firstItem="5hN-k4-6uS" firstAttribute="trailing" secondItem="xWP-fO-6eq" secondAttribute="trailing" constant="56" id="Cwk-gI-WWZ"/>
+                    <constraint firstItem="5hN-k4-6uS" firstAttribute="centerY" secondItem="YTk-wo-b9y" secondAttribute="centerY" id="NkS-kj-aPx"/>
                     <constraint firstItem="jRE-6j-i92" firstAttribute="top" secondItem="YTk-wo-b9y" secondAttribute="top" id="ShD-R2-17u"/>
                     <constraint firstItem="jRE-6j-i92" firstAttribute="leading" secondItem="YTk-wo-b9y" secondAttribute="leading" id="Vjz-k4-dz3"/>
                     <constraint firstItem="xWP-fO-6eq" firstAttribute="centerY" secondItem="jRE-6j-i92" secondAttribute="centerY" id="k72-nD-281"/>
@@ -44,9 +55,10 @@
             <accessibility key="accessibilityConfiguration" identifier="RecipesCells"/>
             <connections>
                 <outlet property="recipeImg" destination="jRE-6j-i92" id="v3J-4h-n4L"/>
-                <outlet property="titleLabel" destination="xWP-fO-6eq" id="rCG-gw-5F2"/>
+                <outlet property="recipedificultly" destination="5hN-k4-6uS" id="QPA-fy-XQi"/>
+                <outlet property="titleLabel" destination="xWP-fO-6eq" id="Iol-8P-45G"/>
             </connections>
-            <point key="canvasLocation" x="20.5" y="62.5"/>
+            <point key="canvasLocation" x="-281.5" y="41.5"/>
         </tableViewCell>
     </objects>
 </document>
