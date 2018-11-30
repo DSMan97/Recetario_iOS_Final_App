@@ -20,7 +20,6 @@ class CategoriesVC: UIViewController {
         title="Categories"
         generateData()
         registerCell()
-        setBarButtonItems()
         // Do any additional setup after loading the view.
     }
     
@@ -34,8 +33,8 @@ class CategoriesVC: UIViewController {
                                     recipe: "1 Primero que todo pedir al carnicero que nos abra el solomillo como un libro.\n2 Poner la manzana troceada con las ciruelas en una sartén con mantequilla y un poco de azúcar moreno. Darle unas vueltas hasta que se ablanden un poco las manzanas\n.3 Rellenar el solomillo de cerdo con las manzanas y ciruelas.4 Coser el solomillo de cerdo relleno o atarlo con hilo de cocina, para que no se salga el relleno.\n5 En una cazuela ancha poner el solomillo de cerdo relleno de manzana y ciruelas con una pizca de sal y pimienta, y sellarlo bien por todos los lados. Una vez sellado, lo sacamos de la cazuela y reservamos. En la misma cazuela ponemos a pochar la cebolla, le añadimos la harina y damos unas vueltas, y enseguida le ponemos el vino y a continuación añadimos las pasas y los solomillos, el agua y la pastilla de caldo, y que hierva a fuego medio durante unos 30 minutos.6 Si queremos añadir castañas hervidas, se añaden en los últimos 5 minutos de cocción.\n 7 Cuando esté hecho, lo sacamos a una fuente y le quitamos el hilo de cocina y lo cortamos con un buen cuchillo en cortadas más bien gruesas y lo bañamos con la salsa que lleva las pasas y las castañas. ¡Y a disfrutar del solomillo relleno con manzana y ciruelas!",
                                     img: "https://t1.rg.ltmcdn.com/es/images/4/9/6/solomillo_relleno_de_manzana_65694_600.jpg",
                                     ingredients: "1 Solomillo Grande\n1 Manzana\n6 o 7 Ciruelas\nSal\nHarina 250g\nPimienta\n",
-                                    locationLat: -4.5000000,
-                                    locationLong: 37.6000000,
+                                    locationLat: 40.4167047,
+                                    locationLong: -3.7035825,
                                     difficult: "Medium",
                                     description: "Si quieres triunfar en la mesa de Navidad con tus invitados no puede faltar este maravilloso solomillo relleno con manzana y ciruelas en salsa de pasas y castañas que, aunque necesita tu tiempo de elaboración, no es tan difícil de hacer como parece y el resultado es espectacular. Sigue leyendo el paso a paso que compartimos en RecetasGratis y comprueba su increíble sabor.\n",
                                     duration: "1H:30min" ),Recipes(
@@ -238,16 +237,7 @@ class CategoriesVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    private func setBarButtonItems(){
-        let GeneralBarButton =
-            UIBarButtonItem(title: "General", style: .plain , target: self, action: #selector(generalPressed))
-        
-        navigationItem.setLeftBarButton(GeneralBarButton, animated: false)
-    }
-    @objc private func generalPressed(){
-        dismiss(animated: true, completion: nil)
-        
-    }
+
 }
 
 extension CategoriesVC: UITableViewDelegate, UITableViewDataSource {
