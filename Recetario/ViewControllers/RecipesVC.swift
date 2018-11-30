@@ -12,12 +12,14 @@ class RecipesVC: UIViewController {
 
     @IBOutlet weak var tableViewAbout: UITableView!
     internal var recipes: Recipes!
+    var categoriesTitle:String = ""
     var arrecipes:[Recipes]=[]
     var arrecipesFilter:[Recipes]=[]
     
-    convenience init(_ marrecipes:[Recipes]){
+    convenience init(_ marrecipes:[Recipes], categoriesName:String){
         self.init()
         self.arrecipes = marrecipes
+        self.categoriesTitle = categoriesName
     }
     
   
@@ -27,9 +29,7 @@ class RecipesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title="Recipes"
-     
-        
+        self.title = categoriesTitle
         searchController.searchBar.backgroundColor = UIColor.white
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -37,7 +37,7 @@ class RecipesVC: UIViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
-        generateData()
+     
         registerCell()
       
    
@@ -59,10 +59,7 @@ class RecipesVC: UIViewController {
         })
         tableViewAbout.reloadData()
     }
-    private func generateData(){
-        
-        
-    }
+  
     
     private func registerCell(){
         let identifier = "RecipesCells"
