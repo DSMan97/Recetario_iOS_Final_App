@@ -12,8 +12,8 @@ class Categories{
     var categoryName:String!
      var categoryImage:String!
     var categoryDescription:String!
-    
     var arrecipes: [Recipes]!
+    var nrecipes:Int!
     
     
     
@@ -22,6 +22,7 @@ class Categories{
         self.categoryImage = image
         self.categoryDescription = desc
         self.arrecipes = mrecipes
+        self.nrecipes = arrecipes.count
     }
     
     

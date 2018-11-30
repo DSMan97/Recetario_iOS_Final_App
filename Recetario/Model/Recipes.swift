@@ -13,14 +13,19 @@ class Recipes{
     var recipeName:String!
     var recipeContent:String!
     var recipeImg:String!
-   
+    var recipeIngredients:String!
+    var recipeOriginLat:Double!
+    var recipeOriginLong:Double!
     
 
     
-    init(name:String,recipe:String, img:String) {
+    init(name:String,recipe:String, img:String, ingredients:String, locationLat:Double, locationLong:Double) {
        self.recipeName = name
         self.recipeContent = recipe
         self.recipeImg = img
+        self.recipeIngredients = ingredients
+        self.recipeOriginLat = locationLat
+        self.recipeOriginLong = locationLong
     }
     
     

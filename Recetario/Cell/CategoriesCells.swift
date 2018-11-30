@@ -14,6 +14,7 @@ class CategoriesCells: UITableViewCell{
     @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet var catImg:UIImageView!
     @IBOutlet var desc:UILabel!
+    @IBOutlet var nRecipes:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
