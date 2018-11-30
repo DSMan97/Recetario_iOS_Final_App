@@ -13,6 +13,10 @@ class RecipesDetailVC: UIViewController {
     @IBOutlet weak var recipeImag: UIImageView!
     var recipes:Recipes!
     @IBOutlet weak var mapButton: UIButton!
+    @IBOutlet weak var recipeIngredients: UITextView!
+    @IBOutlet weak var recipeSteps: UITextView!
+    @IBOutlet weak var recipeDuration: UILabel!
+    
     
     convenience init(_ recipes: Recipes){
         self.init()
@@ -22,7 +26,10 @@ class RecipesDetailVC: UIViewController {
         super.viewDidLoad()
         self.title = recipes.recipeName
         recipeImag.sd_setImage(with: URL(string: recipes.recipeImg), placeholderImage: nil, completed: nil)
-        recipeContent.text = recipes.recipeContent
+        recipeSteps.text = recipes.recipeContent
+        recipeContent.text = recipes.recipeDescription
+        recipeIngredients.text = recipes.recipeIngredients
+        recipeDuration.text = recipes.recipeDuration
         
         
 
