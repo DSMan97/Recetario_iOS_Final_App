@@ -130,12 +130,12 @@ class CategoriesVC: UIViewController {
                     duration: "20min"),Recipes(
                         
                         name: "Pollo al Curry con Nata",
-                        recipe: "1.- ponemos a calentar en una sartén, un chorrito de aceite a fuego medio. Cuando esté caliente, añadimos la cebolla y el ajo picado. Salpimentamos y dejamos cocinar, mientras lo removemos de vez en cuando, unos 5 minutos\n2.- Pasado el tiempo, añadimos el tomate y el curry. Puedes añadir también una guindilla de cayena o chile (si quieres que pique). Removemos y dejamos cocinar un par de minutos más\n3.- Es el turno de añadir el pollo. Subimos un poco la fuerza del fuego y lo añadimos cortado en trozos del tamaño de un bocado. Salpimentamos y sellamos brevemente el pollo, mientras lo mezclamos con el resto de ingredientes\n4.- cuando el pollo esté sellado por fuera, añadimos la nata y removemos bien. Veremos que la nata se va tornando amarilla. Dejamos reducir 5 minutos más, a fuego suave y ¡listo para servir! Puedes espolvorear con un poco de perejil picado, para darle color\n",
-                        img: "https://www.divinacocina.es/wp-content/uploads/pollo-al-curry-cazuela-arroz.jpg",
-                        ingredients: "4 pechugas de pollo\n2 cebollas medianas\n4 dientes de ajo\n5 cucharadas de tomate frito (salsa de tomate)\n2 cucharadas de curry\n400ml de nata para cocinar\nPerejil para espolvorear por encima\n",
+                        recipe: "1.- Se cortan los filetes de pechuga en tiras y se salpimientan. Se reservan.\n2.- Mientras maceran un poco los filetes con la sal y la pimienta, se baten los huevos en un bol y se les añade el ajo y perejil picados. Se mezcla bien.\n3.- Se tritura el maíz con la batidora eléctrica. No hace falta que se quede como harina, ya que es interesante encontrarse con trozos más grandes que otros.\n4.- En otro bol, se mezcla el pan rallado junto con el maíz frito triturado.\n5.-Se pasan los filetes de pollo por los huevos batidos, y luego, por la mezcla de pan rallado con maíz frito triturado.\n6.-Se fríen los filetes de pollo rebozados en una sartén con abundante aceite caliente hasta que se doren.Cuando estén hechos, se retiran del aceite y se ponen sobre papel de cocina para que absorban el exceso de aceite.\n",
+                        img: "https://i.ytimg.com/vi/xLR9yqIyGRE/maxresdefault.jpg",
+                        ingredients: "1 kg de filetes de pechuga de pollo\n200 g de maiz frito triturado\n100 de pan rallado\n1 diente de ajo\n1 cucharadita de perejil picado seco\n1 pizca de pimienta\nsal a gusto\n3 Huevos\n",
                         locationLat: 22.3511148, locationLong:  78.6677428,
                         difficult: "Easy",
-                        description: "El pollo al curry es una receta típica del sudeste asiático. Consiste en este ave hecha con las especias del curry (Cúrcuma, pimienta, cilantro, macis, jengibre, cardamomo, clavo, canela, cayena y anís) y con nata. El curry, puedes hacerlo tú o puedes comprarlo ya hecho. Como guarnición, le viene “al pelo” un buen arroz blanco. Como resultado, tendremos una completísima comida con mucha personalidad. Tanto por su color como sabor. Además, en hacer esta receta no se tarda más de 15 minutos. Los ingredientes para hacer el pollo al curry son",
+                        description: "Si estas cansada del rebozado clásico para los filetes, te aconsejo que hagas este con maíz frito. Queda de una textura diferente, mucho más crujiente que el tradicional. El pollo rebozado con maíz frito es uno de esos platos que no podrás dejar de preparar, porque es fácil y delicioso. Acompañado con unas patatas fritas o con una ensalada se convertirá en tu cena preferida.",
                         duration: "20min")])
         let catVegetables = Categories(name: "Vegetables", image: "https://www.vegetables.co.nz/assets/Uploads/vegetables.jpg", desc: "The best recipes for vegetables", mrecipes: [Recipes(
             name: "Receta de Solomillo relleno de manzana",
@@ -196,7 +196,7 @@ class CategoriesVC: UIViewController {
             description: "",
             duration: "1H:20min")])
         
-        arrcategories.append(contentsOf: [catMeat,catFish,catChiken,catVegetables,catSalad,catPasta,catSoup,catDessert])
+        arrcategories.append(contentsOf: [catMeat,catFish,catChiken,catSoup])
         
     }
     
