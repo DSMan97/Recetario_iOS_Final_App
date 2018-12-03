@@ -16,6 +16,10 @@ class RecipesDetailVC: UIViewController {
     @IBOutlet weak var recipeIngredients: UITextView!
     @IBOutlet weak var recipeSteps: UITextView!
     @IBOutlet weak var recipeDuration: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblIngridients: UILabel!
+    @IBOutlet weak var lblSteps: UILabel!
+    @IBOutlet weak var lblDuration: UILabel!
     
     
     convenience init(_ recipes: Recipes){
@@ -30,6 +34,10 @@ class RecipesDetailVC: UIViewController {
         recipeContent.text = recipes.recipeDescription
         recipeIngredients.text = recipes.recipeIngredients
         recipeDuration.text = recipes.recipeDuration
+        lblDescription.text = "Description"
+        lblSteps.text = "Steps"
+        lblDuration.text = "Duration"
+        lblIngridients.text = "Ingridients"
         
         
 

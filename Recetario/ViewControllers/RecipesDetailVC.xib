@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipesDetailVC" customModule="Recetario" customModuleProvider="target">
             <connections>
+                <outlet property="lblDescription" destination="Li8-Eo-7he" id="kVX-VG-DSM"/>
+                <outlet property="lblDuration" destination="VGs-PB-vVH" id="5lg-Dj-APj"/>
+                <outlet property="lblIngridients" destination="Wej-8Y-ejI" id="2iU-YP-ES6"/>
+                <outlet property="lblSteps" destination="P4D-bK-oSj" id="hvO-bO-CBi"/>
                 <outlet property="mapButton" destination="1cj-gL-p7e" id="vaj-RI-pDJ"/>
                 <outlet property="recipeContent" destination="qSL-5N-Qdl" id="xeN-QR-Beh"/>
                 <outlet property="recipeDuration" destination="MKS-lK-DxB" id="902-Jb-MhU"/>
