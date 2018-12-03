@@ -13,6 +13,8 @@
 		0728B9CE21B0430E00472F78 /* RecipesCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0728B9CC21B0430E00472F78 /* RecipesCells.xib */; };
 		0728B9D321B058FB00472F78 /* RecipesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0728B9D121B058FB00472F78 /* RecipesDetailVC.swift */; };
 		0728B9D421B058FB00472F78 /* RecipesDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0728B9D221B058FB00472F78 /* RecipesDetailVC.xib */; };
+		076E384F21B15AB300D60BC5 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076E384D21B15AB300D60BC5 /* MapVC.swift */; };
+		076E385021B15AB300D60BC5 /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076E384E21B15AB300D60BC5 /* MapVC.xib */; };
 		0772A7A921ABE0AD00CAF9E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7A821ABE0AD00CAF9E3 /* AppDelegate.swift */; };
 		0772A7B021ABE0AE00CAF9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0772A7AF21ABE0AE00CAF9E3 /* Assets.xcassets */; };
 		0772A7BE21ABE0AE00CAF9E3 /* RecetarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0772A7BD21ABE0AE00CAF9E3 /* RecetarioTests.swift */; };
@@ -52,6 +54,8 @@
 		0728B9CC21B0430E00472F78 /* RecipesCells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipesCells.xib; sourceTree = "<group>"; };
 		0728B9D121B058FB00472F78 /* RecipesDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailVC.swift; sourceTree = "<group>"; };
 		0728B9D221B058FB00472F78 /* RecipesDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesDetailVC.xib; sourceTree = "<group>"; };
+		076E384D21B15AB300D60BC5 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		076E384E21B15AB300D60BC5 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
 		0772A7A521ABE0AD00CAF9E3 /* Recetario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0772A7A821ABE0AD00CAF9E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0772A7AF21ABE0AE00CAF9E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				0728B9C821B0352E00472F78 /* RecipesVC.xib */,
 				0728B9D121B058FB00472F78 /* RecipesDetailVC.swift */,
 				0728B9D221B058FB00472F78 /* RecipesDetailVC.xib */,
+				076E384D21B15AB300D60BC5 /* MapVC.swift */,
+				076E384E21B15AB300D60BC5 /* MapVC.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				0728B9CE21B0430E00472F78 /* RecipesCells.xib in Resources */,
 				0728B9CA21B0352E00472F78 /* RecipesVC.xib in Resources */,
 				0772A7E221ABEDB200CAF9E3 /* CategoriesCells.xib in Resources */,
+				076E385021B15AB300D60BC5 /* MapVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +445,7 @@
 				0772A7A921ABE0AD00CAF9E3 /* AppDelegate.swift in Sources */,
 				0728B9CD21B0430E00472F78 /* RecipesCells.swift in Sources */,
 				0772A7E121ABEDB200CAF9E3 /* CategoriesCells.swift in Sources */,
+				076E384F21B15AB300D60BC5 /* MapVC.swift in Sources */,
 				0728B9D321B058FB00472F78 /* RecipesDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

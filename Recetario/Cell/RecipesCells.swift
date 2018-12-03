@@ -13,6 +13,7 @@ class RecipesCells: UITableViewCell{
     
     @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet var recipeImg:UIImageView!
+    @IBOutlet weak var recipedificultly: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
